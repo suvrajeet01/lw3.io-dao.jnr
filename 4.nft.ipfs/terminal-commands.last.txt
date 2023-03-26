@@ -3818,3 +3818,431 @@ To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
    1a5f24c..68c6bce  trunk -> trunk
 
 E:\Project\lw3.io-dao.jnr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.19045.2673]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   4.nft.ipfs/pinata/metadata/1.json
+        modified:   4.nft.ipfs/pinata/metadata/10.json
+        modified:   4.nft.ipfs/pinata/metadata/2.json
+        modified:   4.nft.ipfs/pinata/metadata/3.json
+        modified:   4.nft.ipfs/pinata/metadata/4.json
+        modified:   4.nft.ipfs/pinata/metadata/5.json
+        modified:   4.nft.ipfs/pinata/metadata/6.json
+        modified:   4.nft.ipfs/pinata/metadata/7.json
+        modified:   4.nft.ipfs/pinata/metadata/8.json
+        modified:   4.nft.ipfs/pinata/metadata/9.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\Project\lw3.io-dao.jnr>git add .
+
+E:\Project\lw3.io-dao.jnr>git commit -m "nft.ipfs"
+[trunk 7f3124f] nft.ipfs
+ 10 files changed, 50 insertions(+), 10 deletions(-)
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Project\lw3.io-dao.jnr>git push
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+ ! [rejected]        trunk -> trunk (fetch first)
+error: failed to push some refs to 'https://github.com/suvrajeet01/lw3.io-dao.jnr.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\Project\lw3.io-dao.jnr>git pull https://github.com/suvrajeet01/lw3.io-dao.jnr.git --allow-unrelated-histories
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 10 (delta 7), reused 8 (delta 5), pack-reused 0
+Unpacking objects: 100% (10/10), 1.24 KiB | 9.00 KiB/s, done.
+From https://github.com/suvrajeet01/lw3.io-dao.jnr
+ * branch            HEAD       -> FETCH_HEAD
+Auto-merging 4.nft.ipfs/terminal-commands.txt
+CONFLICT (content): Merge conflict in 4.nft.ipfs/terminal-commands.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+E:\Project\lw3.io-dao.jnr>git pull https://github.com/suvrajeet01/lw3.io-dao.jnr.git --allow-unrelated-histories
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+E:\Project\lw3.io-dao.jnr>git branch
+* trunk
+
+E:\Project\lw3.io-dao.jnr>git log --oneline
+7f3124f (HEAD -> trunk) nft.ipfs
+a5bef8f nft.ipfs
+351ff8b nfs.ipfs
+1ec9248 (origin/trunk) terminal-commands
+14d21dc nft.ipfs
+a75dc70 terminal-commands
+c862aa1 etherscan-verification
+88eadda local-contract-testing
+fab78e1 terminal-commands
+c71a70c terminal-commands
+6c6b8cc terminal-commands
+1fbe389 Merge https://github.com/suvrajeet01/lw3.io-dao.jnr into trunk
+4a6707e terminal-commands
+92ce5d8 ens
+9646bd3 Initial commit
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 3 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   4.nft.ipfs/hardhat/scripts/deploy.js
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   4.nft.ipfs/terminal-commands.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        4.nft.ipfs/terminal-commands.gitpod.txt
+
+
+E:\Project\lw3.io-dao.jnr>git merge --abort
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        4.nft.ipfs/terminal-commands.gitpod.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\Project\lw3.io-dao.jnr>git add .
+warning: in the working copy of '4.nft.ipfs/terminal-commands.gitpod.txt', LF will be replaced by CRLF the next time Git touches it
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   4.nft.ipfs/terminal-commands.gitpod.txt
+
+
+E:\Project\lw3.io-dao.jnr>git commit -m "nft.ipfs"
+[trunk 1dbc8ee] nft.ipfs
+ 1 file changed, 3146 insertions(+)
+ create mode 100644 4.nft.ipfs/terminal-commands.gitpod.txt
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Project\lw3.io-dao.jnr>git push
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+ ! [rejected]        trunk -> trunk (non-fast-forward)
+error: failed to push some refs to 'https://github.com/suvrajeet01/lw3.io-dao.jnr.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\Project\lw3.io-dao.jnr>git pull https://github.com/suvrajeet01/lw3.io-dao.jnr.git --allow-unrelated-histories
+From https://github.com/suvrajeet01/lw3.io-dao.jnr
+ * branch            HEAD       -> FETCH_HEAD
+Auto-merging 4.nft.ipfs/terminal-commands.txt
+CONFLICT (content): Merge conflict in 4.nft.ipfs/terminal-commands.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 4 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   4.nft.ipfs/hardhat/scripts/deploy.js
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   4.nft.ipfs/terminal-commands.txt
+
+
+E:\Project\lw3.io-dao.jnr>git push
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+ ! [rejected]        trunk -> trunk (non-fast-forward)
+error: failed to push some refs to 'https://github.com/suvrajeet01/lw3.io-dao.jnr.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\Project\lw3.io-dao.jnr>git merge
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+E:\Project\lw3.io-dao.jnr>git log --oneline
+1dbc8ee (HEAD -> trunk) nft.ipfs
+7f3124f nft.ipfs
+a5bef8f nft.ipfs
+351ff8b nfs.ipfs
+1ec9248 (origin/trunk) terminal-commands
+14d21dc nft.ipfs
+a75dc70 terminal-commands
+c862aa1 etherscan-verification
+88eadda local-contract-testing
+fab78e1 terminal-commands
+c71a70c terminal-commands
+6c6b8cc terminal-commands
+1fbe389 Merge https://github.com/suvrajeet01/lw3.io-dao.jnr into trunk
+4a6707e terminal-commands
+92ce5d8 ens
+9646bd3 Initial commit
+
+E:\Project\lw3.io-dao.jnr>gitgit fetch
+'gitgit' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Project\lw3.io-dao.jnr>git fetch
+From https://github.com/suvrajeet01/lw3.io-dao.jnr
+   1ec9248..1a5f24c  trunk      -> origin/trunk
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch and 'origin/trunk' have diverged,
+and have 4 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   4.nft.ipfs/hardhat/scripts/deploy.js
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   4.nft.ipfs/terminal-commands.txt
+
+
+E:\Project\lw3.io-dao.jnr>git merge origin/trunk
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+E:\Project\lw3.io-dao.jnr>git branch
+* trunk
+
+E:\Project\lw3.io-dao.jnr>git merge --abort
+
+E:\Project\lw3.io-dao.jnr>git add 4.nft.ipfs/terminal-commands.txt
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch and 'origin/trunk' have diverged,
+and have 4 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+
+E:\Project\lw3.io-dao.jnr>git pull
+Auto-merging 4.nft.ipfs/terminal-commands.txt
+CONFLICT (content): Merge conflict in 4.nft.ipfs/terminal-commands.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch and 'origin/trunk' have diverged,
+and have 4 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        modified:   4.nft.ipfs/hardhat/scripts/deploy.js
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   4.nft.ipfs/terminal-commands.txt
+
+
+E:\Project\lw3.io-dao.jnr>git add 4.nft.ipfs/terminal-commands.txt
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch and 'origin/trunk' have diverged,
+and have 4 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   4.nft.ipfs/hardhat/scripts/deploy.js
+        modified:   4.nft.ipfs/terminal-commands.txt
+
+
+E:\Project\lw3.io-dao.jnr>git commit -m "nft.ipfs"
+[trunk 68c6bce] nft.ipfs
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Project\lw3.io-dao.jnr>git push
+Enumerating objects: 69, done.
+Counting objects: 100% (57/57), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (39/39), 4.09 KiB | 99.00 KiB/s, done.
+Total 39 (delta 27), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (27/27), completed with 12 local objects.
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+   1a5f24c..68c6bce  trunk -> trunk
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+nothing to commit, working tree clean
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        4.nft.ipfs/terminal-commands.last.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\Project\lw3.io-dao.jnr>git add .
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   4.nft.ipfs/terminal-commands.last.txt
+
+
+E:\Project\lw3.io-dao.jnr>git commit -m "terminal-commands"
+[trunk cd60498] terminal-commands
+ 1 file changed, 3820 insertions(+)
+ create mode 100644 4.nft.ipfs/terminal-commands.last.txt
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Project\lw3.io-dao.jnr>git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 17.10 KiB | 1.14 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+   68c6bce..cd60498  trunk -> trunk
+
+E:\Project\lw3.io-dao.jnr>
