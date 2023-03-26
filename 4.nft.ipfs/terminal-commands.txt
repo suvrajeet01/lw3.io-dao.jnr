@@ -3105,6 +3105,7 @@ $
 
 
 
+<<<<<<< HEAD
 suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/4.nft.ipfs (trunk)
 $ git status
 On branch trunk
@@ -3155,11 +3156,26 @@ warning: in the working copy of '4.nft.ipfs/my-app/styles/globals.css', LF will 
 
 suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
 $ git status
+=======
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   4.nft.ipfs/hardhat/scripts/deploy.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ git status
+>>>>>>> 1a5f24ca8ff47972cf57a2338adf8f5d37e1448a
 On branch trunk
 Your branch is up to date with 'origin/trunk'.
 
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
+<<<<<<< HEAD
         new file:   4.nft.ipfs/LW3Punks Contract Address.txt
         new file:   4.nft.ipfs/hardhat/.gitignore
         new file:   4.nft.ipfs/hardhat/README.md
@@ -3265,11 +3281,20 @@ $ git commit -m "nft.ipfs"
 
 suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
 $ git status
+=======
+        modified:   4.nft.ipfs/hardhat/scripts/deploy.js
+
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ git commit -m "nft.ifps"
+[trunk 70bb519] nft.ifps
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ git status
+>>>>>>> 1a5f24ca8ff47972cf57a2338adf8f5d37e1448a
 On branch trunk
 Your branch is ahead of 'origin/trunk' by 1 commit.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
+<<<<<<< HEAD
 
 suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
 $ git push
@@ -3347,3 +3372,16 @@ To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
 
 suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/4.nft.ipfs (trunk)
 $
+=======
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 540 bytes | 540.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+   1ec9248..70bb519  trunk -> trunk
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ 
+>>>>>>> 1a5f24ca8ff47972cf57a2338adf8f5d37e1448a
