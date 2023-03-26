@@ -1453,3 +1453,266 @@ To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
    1fbe389..c71a70c  trunk -> trunk
 
 E:\Project\lw3.io-dao.jnr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.19045.2673]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Project\stackup.dev>git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal-commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\Project\stackup.dev>git add .
+
+E:\Project\stackup.dev>git commit -m "terminal-commands;
+[trunk 2bb01f9] terminal-commands;
+ 1 file changed, 217 insertions(+), 1 deletion(-)
+
+E:\Project\stackup.dev>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Project\stackup.dev>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal-commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\Project\stackup.dev>git add .
+
+E:\Project\stackup.dev>git commit -m "terminal-commands"
+[trunk b31cbd2] terminal-commands
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+E:\Project\stackup.dev>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Project\stackup.dev>git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.54 KiB | 1.54 MiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/suvrajeet01/stackup.dev.git
+   1ecf0b8..b31cbd2  trunk -> trunk
+
+E:\Project\stackup.dev>dir ..\
+ Volume in drive E is project
+ Volume Serial Number is 3CB5-0DF3
+
+ Directory of E:\Project
+
+25-03-2023  04:53    <DIR>          .
+25-03-2023  04:53    <DIR>          ..
+24-03-2023  05:45    <DIR>          1
+24-03-2023  00:12           118,872 1.terminal-commands.txt
+21-03-2023  05:22    <DIR>          cognitiveclass.ai
+23-03-2023  02:42    <DIR>          fingerPy
+13-03-2023  23:06    <DIR>          learn-python_fcc
+26-03-2023  06:09    <DIR>          lw3.io-dao.jnr
+24-03-2023  02:45    <DIR>          stackup.dev
+               1 File(s)        118,872 bytes
+               8 Dir(s)     223,350,784 bytes free
+
+E:\Project\stackup.dev>cd ..
+
+E:\Project>dirf
+'dirf' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Project>dir
+ Volume in drive E is project
+ Volume Serial Number is 3CB5-0DF3
+
+ Directory of E:\Project
+
+25-03-2023  04:53    <DIR>          .
+25-03-2023  04:53    <DIR>          ..
+24-03-2023  05:45    <DIR>          1
+24-03-2023  00:12           118,872 1.terminal-commands.txt
+21-03-2023  05:22    <DIR>          cognitiveclass.ai
+23-03-2023  02:42    <DIR>          fingerPy
+13-03-2023  23:06    <DIR>          learn-python_fcc
+26-03-2023  06:09    <DIR>          lw3.io-dao.jnr
+24-03-2023  02:45    <DIR>          stackup.dev
+               1 File(s)        118,872 bytes
+               8 Dir(s)     223,350,784 bytes free
+
+E:\Project>cd lw3.io-dao.jnr
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.testing-contract-locally/
+        3.etherscan-verification/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\Project\lw3.io-dao.jnr>git add .
+warning: in the working copy of '2.testing-contract-locally/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/contracts/Lock.sol', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/hardhat.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/scripts/deploy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/test/Lock.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/contracts/Lock.sol', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/hardhat.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/scripts/deploy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/test/Lock.js', LF will be replaced by CRLF the next time Git touches it
+
+E:\Project\lw3.io-dao.jnr>git commit 2.testing-contract-locally -m "local-contract-testing"
+warning: in the working copy of '2.testing-contract-locally/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/contracts/Lock.sol', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/hardhat.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/scripts/deploy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '2.testing-contract-locally/test/Lock.js', LF will be replaced by CRLF the next time Git touches it
+[trunk 88eadda] local-contract-testing
+ 9 files changed, 9894 insertions(+)
+ create mode 100644 2.testing-contract-locally/.gitignore
+ create mode 100644 2.testing-contract-locally/README.md
+ create mode 100644 2.testing-contract-locally/contracts/Lock.sol
+ create mode 100644 2.testing-contract-locally/hardhat.config.js
+ create mode 100644 2.testing-contract-locally/package-lock.json
+ create mode 100644 2.testing-contract-locally/package.json
+ create mode 100644 2.testing-contract-locally/scripts/deploy.js
+ create mode 100644 2.testing-contract-locally/terminal-commands.txt
+ create mode 100644 2.testing-contract-locally/test/Lock.js
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   3.etherscan-verification/.gitignore
+        new file:   3.etherscan-verification/README.md
+        new file:   3.etherscan-verification/contracts/Lock.sol
+        new file:   3.etherscan-verification/contracts/Verify.sol
+        new file:   3.etherscan-verification/hardhat.config.js
+        new file:   3.etherscan-verification/package-lock.json
+        new file:   3.etherscan-verification/package.json
+        new file:   3.etherscan-verification/scripts/deploy.js
+        new file:   3.etherscan-verification/terminal-commands.txt
+        new file:   3.etherscan-verification/test/Lock.js
+
+
+E:\Project\lw3.io-dao.jnr>git commit 3.etherscan-verification -m "etherscan-verification"
+warning: in the working copy of '3.etherscan-verification/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/contracts/Lock.sol', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/hardhat.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/scripts/deploy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '3.etherscan-verification/test/Lock.js', LF will be replaced by CRLF the next time Git touches it
+[trunk c862aa1] etherscan-verification
+ 10 files changed, 9907 insertions(+)
+ create mode 100644 3.etherscan-verification/.gitignore
+ create mode 100644 3.etherscan-verification/README.md
+ create mode 100644 3.etherscan-verification/contracts/Lock.sol
+ create mode 100644 3.etherscan-verification/contracts/Verify.sol
+ create mode 100644 3.etherscan-verification/hardhat.config.js
+ create mode 100644 3.etherscan-verification/package-lock.json
+ create mode 100644 3.etherscan-verification/package.json
+ create mode 100644 3.etherscan-verification/scripts/deploy.js
+ create mode 100644 3.etherscan-verification/terminal-commands.txt
+ create mode 100644 3.etherscan-verification/test/Lock.js
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Project\lw3.io-dao.jnr>git push
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (27/27), 90.79 KiB | 5.04 MiB/s, done.
+Total 27 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+   fab78e1..c862aa1  trunk -> trunk
+
+E:\Project\lw3.io-dao.jnr>
