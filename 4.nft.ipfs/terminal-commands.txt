@@ -2807,3 +2807,244 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
 $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/4.nft.ipfs (trunk)
+$ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/4.nft.ipfs (trunk)
+$ cd ..
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
+$ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        4.nft.ipfs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
+$ git add .
+warning: in the working copy of '4.nft.ipfs/hardhat/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/hardhat/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/hardhat/contracts/Lock.sol', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/hardhat/hardhat.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/hardhat/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/hardhat/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/hardhat/scripts/deploy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/hardhat/test/Lock.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/jsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/next.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/pages/_app.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/pages/_document.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/pages/api/hello.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/pages/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/styles/Home.module.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '4.nft.ipfs/my-app/styles/globals.css', LF will be replaced by CRLF the next time Git touches it
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
+$ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   4.nft.ipfs/LW3Punks Contract Address.txt
+        new file:   4.nft.ipfs/hardhat/.gitignore
+        new file:   4.nft.ipfs/hardhat/README.md
+        new file:   4.nft.ipfs/hardhat/contracts/LW3Punks.sol
+        new file:   4.nft.ipfs/hardhat/contracts/Lock.sol
+        new file:   4.nft.ipfs/hardhat/hardhat.config.js
+        new file:   4.nft.ipfs/hardhat/package-lock.json
+        new file:   4.nft.ipfs/hardhat/package.json
+        new file:   4.nft.ipfs/hardhat/scripts/deploy.js
+        new file:   4.nft.ipfs/hardhat/test/Lock.js
+        new file:   4.nft.ipfs/my-app/.gitignore
+        new file:   4.nft.ipfs/my-app/README.md
+        new file:   4.nft.ipfs/my-app/constants/index.js
+        new file:   4.nft.ipfs/my-app/jsconfig.json
+        new file:   4.nft.ipfs/my-app/next.config.js
+        new file:   4.nft.ipfs/my-app/package-lock.json
+        new file:   4.nft.ipfs/my-app/package.json
+        new file:   4.nft.ipfs/my-app/pages/_app.js
+        new file:   4.nft.ipfs/my-app/pages/_document.js
+        new file:   4.nft.ipfs/my-app/pages/api/hello.js
+        new file:   4.nft.ipfs/my-app/pages/index.js
+        new file:   4.nft.ipfs/my-app/public/favicon.ico
+        new file:   4.nft.ipfs/my-app/public/next.svg
+        new file:   4.nft.ipfs/my-app/public/thirteen.svg
+        new file:   4.nft.ipfs/my-app/public/vercel.svg
+        new file:   4.nft.ipfs/my-app/styles/Home.module.css
+        new file:   4.nft.ipfs/my-app/styles/globals.css
+        new file:   4.nft.ipfs/pinata/LW3Punks/1.png
+        new file:   4.nft.ipfs/pinata/LW3Punks/10.png
+        new file:   4.nft.ipfs/pinata/LW3Punks/2.png
+        new file:   4.nft.ipfs/pinata/LW3Punks/3.png
+        new file:   4.nft.ipfs/pinata/LW3Punks/4.png
+        new file:   4.nft.ipfs/pinata/LW3Punks/5.png
+        new file:   4.nft.ipfs/pinata/LW3Punks/6.png
+        new file:   4.nft.ipfs/pinata/LW3Punks/7.png
+        new file:   4.nft.ipfs/pinata/LW3Punks/8.png
+        new file:   4.nft.ipfs/pinata/LW3Punks/9.png
+        new file:   4.nft.ipfs/pinata/metadata/1.json
+        new file:   4.nft.ipfs/pinata/metadata/10.json
+        new file:   4.nft.ipfs/pinata/metadata/2.json
+        new file:   4.nft.ipfs/pinata/metadata/3.json
+        new file:   4.nft.ipfs/pinata/metadata/4.json
+        new file:   4.nft.ipfs/pinata/metadata/5.json
+        new file:   4.nft.ipfs/pinata/metadata/6.json
+        new file:   4.nft.ipfs/pinata/metadata/7.json
+        new file:   4.nft.ipfs/pinata/metadata/8.json
+        new file:   4.nft.ipfs/pinata/metadata/9.json
+        new file:   4.nft.ipfs/terminal-commands.txt
+
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
+$ git commit -m "nft.ipfs"
+[trunk 14d21dc] nft.ipfs
+ 48 files changed, 16031 insertions(+)
+ create mode 100644 4.nft.ipfs/LW3Punks Contract Address.txt
+ create mode 100644 4.nft.ipfs/hardhat/.gitignore
+ create mode 100644 4.nft.ipfs/hardhat/README.md
+ create mode 100644 4.nft.ipfs/hardhat/contracts/LW3Punks.sol
+ create mode 100644 4.nft.ipfs/hardhat/contracts/Lock.sol
+ create mode 100644 4.nft.ipfs/hardhat/hardhat.config.js
+ create mode 100644 4.nft.ipfs/hardhat/package-lock.json
+ create mode 100644 4.nft.ipfs/hardhat/package.json
+ create mode 100644 4.nft.ipfs/hardhat/scripts/deploy.js
+ create mode 100644 4.nft.ipfs/hardhat/test/Lock.js
+ create mode 100644 4.nft.ipfs/my-app/.gitignore
+ create mode 100644 4.nft.ipfs/my-app/README.md
+ create mode 100644 4.nft.ipfs/my-app/constants/index.js
+ create mode 100644 4.nft.ipfs/my-app/jsconfig.json
+ create mode 100644 4.nft.ipfs/my-app/next.config.js
+ create mode 100644 4.nft.ipfs/my-app/package-lock.json
+ create mode 100644 4.nft.ipfs/my-app/package.json
+ create mode 100644 4.nft.ipfs/my-app/pages/_app.js
+ create mode 100644 4.nft.ipfs/my-app/pages/_document.js
+ create mode 100644 4.nft.ipfs/my-app/pages/api/hello.js
+ create mode 100644 4.nft.ipfs/my-app/pages/index.js
+ create mode 100644 4.nft.ipfs/my-app/public/favicon.ico
+ create mode 100644 4.nft.ipfs/my-app/public/next.svg
+ create mode 100644 4.nft.ipfs/my-app/public/thirteen.svg
+ create mode 100644 4.nft.ipfs/my-app/public/vercel.svg
+ create mode 100644 4.nft.ipfs/my-app/styles/Home.module.css
+ create mode 100644 4.nft.ipfs/my-app/styles/globals.css
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/1.png
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/10.png
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/2.png
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/3.png
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/4.png
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/5.png
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/6.png
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/7.png
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/8.png
+ create mode 100644 4.nft.ipfs/pinata/LW3Punks/9.png
+ create mode 100644 4.nft.ipfs/pinata/metadata/1.json
+ create mode 100644 4.nft.ipfs/pinata/metadata/10.json
+ create mode 100644 4.nft.ipfs/pinata/metadata/2.json
+ create mode 100644 4.nft.ipfs/pinata/metadata/3.json
+ create mode 100644 4.nft.ipfs/pinata/metadata/4.json
+ create mode 100644 4.nft.ipfs/pinata/metadata/5.json
+ create mode 100644 4.nft.ipfs/pinata/metadata/6.json
+ create mode 100644 4.nft.ipfs/pinata/metadata/7.json
+ create mode 100644 4.nft.ipfs/pinata/metadata/8.json
+ create mode 100644 4.nft.ipfs/pinata/metadata/9.json
+ create mode 100644 4.nft.ipfs/terminal-commands.txt
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
+$ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
+$ git push
+Enumerating objects: 65, done.
+Counting objects: 100% (65/65), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (60/60), done.
+Writing objects: 100% (64/64), 318.66 KiB | 9.66 MiB/s, done.
+Total 64 (delta 11), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (11/11), completed with 1 local object.
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+   a75dc70..14d21dc  trunk -> trunk
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
+$ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+nothing to commit, working tree clean
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr (trunk)
+$
