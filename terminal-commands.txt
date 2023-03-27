@@ -1716,3 +1716,156 @@ To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
    fab78e1..c862aa1  trunk -> trunk
 
 E:\Project\lw3.io-dao.jnr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.19045.2673]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5.ceramic.network/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\Project\lw3.io-dao.jnr>git add .
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/jsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/next.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/pages/_app.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/pages/_document.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/pages/api/hello.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/pages/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/styles/Home.module.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '5.ceramic.network/ceramic-tutorial/styles/globals.css', LF will be replaced by CRLF the next time Git touches it
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   5.ceramic.network/ceramic-tutorial/.gitignore
+        new file:   5.ceramic.network/ceramic-tutorial/README.md
+        new file:   5.ceramic.network/ceramic-tutorial/jsconfig.json
+        new file:   5.ceramic.network/ceramic-tutorial/next.config.js
+        new file:   5.ceramic.network/ceramic-tutorial/package-lock.json
+        new file:   5.ceramic.network/ceramic-tutorial/package.json
+        new file:   5.ceramic.network/ceramic-tutorial/pages/_app.js
+        new file:   5.ceramic.network/ceramic-tutorial/pages/_document.js
+        new file:   5.ceramic.network/ceramic-tutorial/pages/api/hello.js
+        new file:   5.ceramic.network/ceramic-tutorial/pages/index.js
+        new file:   5.ceramic.network/ceramic-tutorial/public/favicon.ico
+        new file:   5.ceramic.network/ceramic-tutorial/public/next.svg
+        new file:   5.ceramic.network/ceramic-tutorial/public/thirteen.svg
+        new file:   5.ceramic.network/ceramic-tutorial/public/vercel.svg
+        new file:   5.ceramic.network/ceramic-tutorial/styles/Home.module.css
+        new file:   5.ceramic.network/ceramic-tutorial/styles/globals.css
+        new file:   5.ceramic.network/terminal-commands.txt
+
+
+E:\Project\lw3.io-dao.jnr>git commit -m "ceramic.network"
+[trunk a5f6de8] ceramic.network
+ 17 files changed, 4971 insertions(+)
+ create mode 100644 5.ceramic.network/ceramic-tutorial/.gitignore
+ create mode 100644 5.ceramic.network/ceramic-tutorial/README.md
+ create mode 100644 5.ceramic.network/ceramic-tutorial/jsconfig.json
+ create mode 100644 5.ceramic.network/ceramic-tutorial/next.config.js
+ create mode 100644 5.ceramic.network/ceramic-tutorial/package-lock.json
+ create mode 100644 5.ceramic.network/ceramic-tutorial/package.json
+ create mode 100644 5.ceramic.network/ceramic-tutorial/pages/_app.js
+ create mode 100644 5.ceramic.network/ceramic-tutorial/pages/_document.js
+ create mode 100644 5.ceramic.network/ceramic-tutorial/pages/api/hello.js
+ create mode 100644 5.ceramic.network/ceramic-tutorial/pages/index.js
+ create mode 100644 5.ceramic.network/ceramic-tutorial/public/favicon.ico
+ create mode 100644 5.ceramic.network/ceramic-tutorial/public/next.svg
+ create mode 100644 5.ceramic.network/ceramic-tutorial/public/thirteen.svg
+ create mode 100644 5.ceramic.network/ceramic-tutorial/public/vercel.svg
+ create mode 100644 5.ceramic.network/ceramic-tutorial/styles/Home.module.css
+ create mode 100644 5.ceramic.network/ceramic-tutorial/styles/globals.css
+ create mode 100644 5.ceramic.network/terminal-commands.txt
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Project\lw3.io-dao.jnr>
