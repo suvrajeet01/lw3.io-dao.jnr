@@ -1,0 +1,139 @@
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network (trunk)
+$ npx create-next-app@latest ceramic-tutorial
+√ Would you like to use TypeScript with this project? ... No / Yes
+√ Would you like to use ESLint with this project? ... No / Yes
+√ Would you like to use `src/` directory with this project? ... No / Yes
+√ Would you like to use experimental `app/` directory with this project? ... No / Yes
+√ What import alias would you like configured? ... @/*
+Creating a new Next.js app in E:\Project\lw3.io-dao.jnr\5.ceramic.network\ceramic-tutorial.
+
+Using npm.
+
+Initializing project with template: default
+
+
+Installing dependencies:
+- react
+- react-dom
+- next
+
+
+added 17 packages, and audited 18 packages in 25s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Success! Created ceramic-tutorial at E:\Project\lw3.io-dao.jnr\5.ceramic.network\ceramic-tutorial
+
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network (trunk)
+$ cd
+ceramic-tutorial/      terminal-commands.txt
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network (trunk)
+$ cd ceramic-tutorial/
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$ ls
+jsconfig.json  next.config.js  node_modules/  package.json  package-lock.json  pages/  public/  README.md  styles/
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$ ls -l\
+> ^C
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$ ls -l
+total 27
+-rw-r--r-- 1 suvra 197609    73 Mar 27 05:18 jsconfig.json
+-rw-r--r-- 1 suvra 197609   118 Mar 24 05:57 next.config.js
+drwxr-xr-x 1 suvra 197609     0 Mar 27 05:19 node_modules/
+-rw-r--r-- 1 suvra 197609   291 Mar 27 05:19 package.json
+-rw-r--r-- 1 suvra 197609 13898 Mar 27 05:19 package-lock.json
+drwxr-xr-x 1 suvra 197609     0 Mar 27 05:18 pages/
+drwxr-xr-x 1 suvra 197609     0 Mar 27 05:18 public/
+-rw-r--r-- 1 suvra 197609  1750 Mar 24 05:57 README.md
+drwxr-xr-x 1 suvra 197609     0 Mar 27 05:18 styles/
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$ npm install "@self.id/react" "@self.id/web" key-did-provider-ed25519
+npm WARN deprecated multibase@4.0.6: This module has been superseded by the multiformats module
+
+added 239 packages, and audited 257 packages in 2m
+
+40 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$ npm install ethers@5 web3modal
+
+added 66 packages, and audited 323 packages in 23s
+
+49 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$ npm run dev
+
+> ceramic-tutorial@0.1.0 dev
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+event - compiled client and server successfully in 36.4s (1365 modules)
+wait  - compiling / (client and server)...
+FetchError: request to https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap failed, reason: getaddrinfo ENOTFOUND fonts.googleapis.com
+    at ClientRequest.<anonymous> (E:\Project\lw3.io-dao.jnr\5.ceramic.network\ceramic-tutorial\node_modules\next\dist\compiled\node-fetch\index.js:1:65756)
+    at ClientRequest.emit (node:events:513:28)
+    at TLSSocket.socketErrorListener (node:_http_client:502:9)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND'
+}
+error - Failed to download `Inter` from Google Fonts. Using fallback font instead.
+event - compiled client and server successfully in 2s (1391 modules)
+
+
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$ ls
+jsconfig.json   node_modules/  package-lock.json  public/    styles/
+next.config.js  package.json   pages/             README.md
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$ ls -l
+total 187
+-rw-r--r-- 1 suvra 197609     73 Mar 27 05:18 jsconfig.json
+-rw-r--r-- 1 suvra 197609    118 Mar 24 05:57 next.config.js
+drwxr-xr-x 1 suvra 197609      0 Mar 27 05:24 node_modules/
+-rw-r--r-- 1 suvra 197609    447 Mar 27 05:24 package.json
+-rw-r--r-- 1 suvra 197609 151616 Mar 27 05:24 package-lock.json
+drwxr-xr-x 1 suvra 197609      0 Mar 27 05:18 pages/
+drwxr-xr-x 1 suvra 197609      0 Mar 27 05:18 public/
+-rw-r--r-- 1 suvra 197609   1750 Mar 24 05:57 README.md
+drwxr-xr-x 1 suvra 197609      0 Mar 27 05:18 styles/
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$ npm run dev
+
+> ceramic-tutorial@0.1.0 dev
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+event - compiled client and server successfully in 4.1s (1365 modules)
+wait  - compiling / (client and server)...
+event - compiled client and server successfully in 2.9s (1400 modules)
+
+←[?25h
+
+suvra@Suvrajeet MINGW64 /e/Project/lw3.io-dao.jnr/5.ceramic.network/ceramic-tutorial (trunk)
+$
+
