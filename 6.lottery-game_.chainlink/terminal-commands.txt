@@ -237,3 +237,77 @@ gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hard
 
 
 
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../../terminal-commands.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../
+        ../../contract-address
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial (trunk) $ cd ../..
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ gti status
+bash: gti: command not found
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal-commands.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        RandomWinnerGame/
+        contract-address
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   RandomWinnerGame/hardhat-tutorial/.gitignore
+        new file:   RandomWinnerGame/hardhat-tutorial/README.md
+        new file:   RandomWinnerGame/hardhat-tutorial/constants/index.js
+        new file:   RandomWinnerGame/hardhat-tutorial/contracts/Lock.sol
+        new file:   RandomWinnerGame/hardhat-tutorial/contracts/RandomWinnerGame.sol
+        new file:   RandomWinnerGame/hardhat-tutorial/hardhat.config.js
+        new file:   RandomWinnerGame/hardhat-tutorial/package-lock.json
+        new file:   RandomWinnerGame/hardhat-tutorial/package.json
+        new file:   RandomWinnerGame/hardhat-tutorial/scripts/deploy.js
+        new file:   RandomWinnerGame/hardhat-tutorial/test/Lock.js
+        new file:   contract-address
+        modified:   terminal-commands.txt
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git commit -m "chainlink.lottery-game"
+[trunk 5744cab] chainlink.lottery-game
+ 12 files changed, 17208 insertions(+)
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/.gitignore
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/README.md
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/constants/index.js
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/contracts/Lock.sol
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/contracts/RandomWinnerGame.sol
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/hardhat.config.js
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/package-lock.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/package.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/scripts/deploy.js
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/test/Lock.js
+ create mode 100644 6.lottery-game_.chainlink/contract-address
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ 
