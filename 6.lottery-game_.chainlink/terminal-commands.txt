@@ -1,0 +1,38 @@
+Microsoft Windows [Version 10.0.19045.2728]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   6.lottery-game_.chainlink/terminal-commands.txt
+
+
+E:\Project\lw3.io-dao.jnr>git commit -m "chainlink.lottery-game"
+[trunk 1a85393] chainlink.lottery-game
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 6.lottery-game_.chainlink/terminal-commands.txt
+
+E:\Project\lw3.io-dao.jnr>git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+E:\Project\lw3.io-dao.jnr>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 360 bytes | 120.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+   7790efe..1a85393  trunk -> trunk
+
+E:\Project\lw3.io-dao.jnr>
+
+
