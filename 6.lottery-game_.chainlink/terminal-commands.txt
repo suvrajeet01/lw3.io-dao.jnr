@@ -311,3 +311,1489 @@ Your branch is ahead of 'origin/trunk' by 1 commit.
 
 nothing to commit, working tree clean
 gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ 
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ git push
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (25/25), 164.83 KiB | 7.17 MiB/s, done.
+Total 25 (delta 4), reused 4 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+   7ac8c6e..0f3d7cc  trunk -> trunk
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ yarn  --version
+1.22.19
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ cd 6.lottery-game_.chainlink/RandomWinnerGame/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ yarn global add @graphprotocol/graph-cli
+yarn global v1.22.19
+[1/4] Resolving packages...
+warning @graphprotocol/graph-cli > request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+warning @graphprotocol/graph-cli > ipfs-http-client > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipfs-block > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor@0.15.3: This module has been superseded by @ipld/dag-cbor and multiformats
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids@0.8.3: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb@0.17.4: This module has been superseded by @ipld/dag-pb and multiformats
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw@4.0.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multiaddr@6.1.1: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multiaddr@7.5.0: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multiaddr > cids@0.8.3: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multicodec@0.5.7: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > cids > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > multicodec@0.5.7: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multibase@0.6.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > cids > multibase@0.6.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids > multibase@1.0.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multibase@0.6.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multiaddr > multibase@0.7.0: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multihashes > multibase@0.7.0: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids > multihashes > multibase@1.0.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-info@0.15.1: No longer supported for js-libp2p0.28.0 or later
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-info > multiaddr@6.1.1: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > promisify-es6@1.0.3: Unmaintained
+warning @graphprotocol/graph-cli > request > har-validator@5.1.5: this library is no longer supported
+warning @graphprotocol/graph-cli > request > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > protons@1.2.1: This module is no longer maintained
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > multihashing-async@0.8.2: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > multihashing-async@0.7.0: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw > multihashing-async@0.8.2: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > mafmt > multiaddr@7.5.0: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-info > mafmt > multiaddr@6.1.1: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > multihashing-async@0.5.2: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > protons@1.2.1: This module is no longer maintained
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > libp2p-crypto-secp256k1@0.3.1: Included in libp2p-crypto, use it instead. https://github.com/libp2p/js-libp2p-crypto
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > libp2p-crypto-secp256k1 > multihashing-async@0.6.0: This module has been superseded by the multiformats module
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Installed "@graphprotocol/graph-cli@0.44.0" with binaries:
+      - graph
+Done in 29.74s.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/Learnweb3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): Add another contract? (y/n): 
+Subgraph suvrajeet01/Learnweb3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth
+Which product to initialize?: hosted-service
+What is the deploy key?: ****************************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth
+Which product to initialize?: 
+Which product to initialize?: hosted-service
+What is the deploy key?: ****************************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✖ Subgraph name · suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+ ›
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+? Subgraph name ‣ suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink 
+
+▸ Subgraph name "suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink" needs to have the format "<PREFIX>/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink".
+
+When using the Hosted Service at https://thegraph.com, <PREFIX> is the
+name of your GitHub user or organization.
+
+You can bypass this check with --allow-simple-name.
+
+  Examples:
+
+    $ graph init gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+    $ graph init suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink --allow-simple-name
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✖ Subgraph name · suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+ ›
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✖ Subgraph name · suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+ ›
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✖ Subgraph name · suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+ ›
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✖ Subgraph name · suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+ ›
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+✔ Protocol · near
+✖ Subgraph name · gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+ ›
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+✔ Protocol · ethereum
+✔ Product for which to initialize · hosted-service
+? Subgraph name ‣ gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink 
+
+▸ Subgraph name "gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink" needs to have the format "<PREFIX>/gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink".
+
+When using the Hosted Service at https://thegraph.com, <PREFIX> is the
+name of your GitHub user or organization.
+
+You can bypass this check with --allow-simple-name.
+
+  Examples:
+
+    $ graph init gitpod/gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+    $ graph init gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink --allow-simple-name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink --allow-simple-name
+✔ Protocol · ethereum
+✔ Product for which to initialize · hosted-service
+✔ Subgraph name · gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink
+✔ Directory to create the subgraph in · suvrajeet01
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinneGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): Add another contract? (y/n): 
+Subgraph gitpod/suvrajeet01/lw3.io-dao.jnr/tree/trunk/6.lottery-game_.chainlink created in suvrajeet01
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd suvrajeet01` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ 
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../terminal-commands.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abi.json
+        graph/
+        suvrajeet01/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ git add .
+warning: adding embedded git repository: 6.lottery-game_.chainlink/RandomWinnerGame/graph
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> 6.lottery-game_.chainlink/RandomWinnerGame/graph
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached 6.lottery-game_.chainlink/RandomWinnerGame/graph
+hint: 
+hint: See "git help submodule" for more information.
+warning: adding embedded git repository: 6.lottery-game_.chainlink/RandomWinnerGame/suvrajeet01
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ ls
+abi.json  graph  hardhat-tutorial  suvrajeet01
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -r graph/ suvrajeet01/
+rm: remove write-protected regular file 'graph/.git/objects/e8/91603b23709d5df8dcc2b220cc8efa694beed6'? yy
+rm: remove write-protected regular file 'graph/.git/objects/e2/454d21d9cff06aa24ba30106c890afc6c669c2'? y
+rm: remove write-protected regular file 'graph/.git/objects/13/5f71b8a1af14392133a32dbfc34a7d95f38929'? y
+rm: remove write-protected regular file 'graph/.git/objects/63/3d73eca6edeba7389272f92852a9364da1b9ff'? ^C
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph -y
+rm: invalid option -- 'y'
+Try 'rm --help' for more information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph --y
+rm: unrecognized option '--y'
+Try 'rm --help' for more information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/ --y
+rm: unrecognized option '--y'
+Try 'rm --help' for more information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ ls
+abi.json  hardhat-tutorial  suvrajeet01
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf suvrajeet01/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   abi.json
+        new file:   graph
+        new file:   suvrajeet01
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    graph
+        deleted:    suvrajeet01
+        modified:   ../terminal-commands.txt
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   abi.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../terminal-commands.txt
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ git commit -m "the-graph"
+[trunk f286934] the-graph
+ 1 file changed, 272 insertions(+)
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/abi.json
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../terminal-commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 988 bytes | 988.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+   0f3d7cc..f286934  trunk -> trunk
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../terminal-commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/randomwinnergame-lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/randomwinnergame-lw3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/randomwinnergame-lw3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ ls
+abi.json  hardhat-tutorial
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ yarn global add @graphprotocol/graph-cli
+yarn global v1.22.19
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Installed "@graphprotocol/graph-cli@0.44.0" with binaries:
+      - graph
+Done in 2.25s.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/randomwinnergame-lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782 --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/randomwinnergame-lw3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Contract address: ^Cgitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ 
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ yarn global add @graphprotocol/graph-cli
+yarn global v1.22.19
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+
+success Installed "@graphprotocol/graph-cli@0.44.0" with binaries:
+      - graph
+Done in 2.29s.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/Learnweb3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/Learnweb3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi /abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/Learnweb3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/Learnweb3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth
+Which product to initialize?: hosted-service
+What is the deploy key?: ****************************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ ls
+abi.json  graph  hardhat-tutorial
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ ls
+abi.json  hardhat-tutorial
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ yarn global add @graphprotocol/graph-cli
+yarn global v1.22.19
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+
+success Installed "@graphprotocol/graph-cli@0.44.0" with binaries:
+      - graph
+Done in 2.31s.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/Learnweb3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/Learnweb3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/Learnweb3
+✖ Directory to create the subgraph in · graph
+ ›
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/Learnweb3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/Learnweb3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi /abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/Learnweb3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/Learnweb3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth
+Which product to initialize?: hosted-service
+What is the deploy key?: ****************************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth
+Which product to initialize?: hosted-service
+What is the deploy key?: ****************************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ cd 6.lottery-game_.chainlink/RandomWinnerGame/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ ls
+abi.json  hardhat-tutorial
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ ll
+total 12
+drwxr-xr-x 3 gitpod gitpod   46 Apr  3 09:11 ./
+drwxr-xr-x 3 gitpod gitpod   83 Apr  2 14:54 ../
+-rw-r--r-- 1 gitpod gitpod 5052 Apr  3 11:35 abi.json
+drwxr-xr-x 9 gitpod gitpod 4096 Apr  2 14:53 hardhat-tutorial/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ yarn global add @graphprotocol/graph-cli
+yarn global v1.22.19
+[1/4] Resolving packages...
+warning @graphprotocol/graph-cli > request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+warning @graphprotocol/graph-cli > request > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+warning @graphprotocol/graph-cli > ipfs-http-client > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipfs-block > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor@0.15.3: This module has been superseded by @ipld/dag-cbor and multiformats
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids@0.8.3: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw@4.0.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb@0.17.4: This module has been superseded by @ipld/dag-pb and multiformats
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multibase@0.6.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > cids > multibase@0.6.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids > multibase@1.0.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multibase@0.6.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multihashes > multibase@0.7.0: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids > multihashes > multibase@1.0.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multicodec@0.5.7: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > cids > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > multicodec@0.5.7: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multiaddr@6.1.1: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multiaddr@7.5.0: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multiaddr > cids@0.8.3: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multiaddr > multibase@0.7.0: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-info@0.15.1: No longer supported for js-libp2p0.28.0 or later
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-info > multiaddr@6.1.1: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > promisify-es6@1.0.3: Unmaintained
+warning @graphprotocol/graph-cli > request > har-validator@5.1.5: this library is no longer supported
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > protons@1.2.1: This module is no longer maintained
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > multihashing-async@0.8.2: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw > multihashing-async@0.8.2: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > multihashing-async@0.7.0: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > mafmt > multiaddr@7.5.0: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-info > mafmt > multiaddr@6.1.1: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > multihashing-async@0.5.2: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > protons@1.2.1: This module is no longer maintained
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > libp2p-crypto-secp256k1@0.3.1: Included in libp2p-crypto, use it instead. https://github.com/libp2p/js-libp2p-crypto
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > libp2p-crypto-secp256k1 > multihashing-async@0.6.0: This module has been superseded by the multiformats module
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Installed "@graphprotocol/graph-cli@0.44.0" with binaries:
+      - graph
+Done in 25.47s.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ history
+    1  cd 6.lottery-game_.chainlink/RandomWinnerGame/
+    2  ls
+    3  ll
+    4  yarn global add @graphprotocol/graph-cli
+    5  clear
+    6  graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+    7  npm install -g @graphprotocol/graph-cli
+    8  graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+    9  graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi /abi.json --network mumbai graph
+   10* 
+   11  graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  
+   12  graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3
+   13  graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi abi.json --network mumbai graph
+   14  graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+   15  clear
+   16  history
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ cd 6.lottery-game_.chainlink/RandomWinnerGame/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ start block
+bash: start: command not found
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/Learnweb3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+bash: graph: command not found
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ yarn global add @graphprotocol/graph-cli
+yarn global v1.22.19
+[1/4] Resolving packages...
+warning @graphprotocol/graph-cli > request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+warning @graphprotocol/graph-cli > request > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+warning @graphprotocol/graph-cli > ipfs-http-client > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor@0.15.3: This module has been superseded by @ipld/dag-cbor and multiformats
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids@0.8.3: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw@4.0.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipfs-block > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb@0.17.4: This module has been superseded by @ipld/dag-pb and multiformats
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > cids@0.7.5: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multibase@0.6.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > cids > multibase@0.6.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids > multibase@1.0.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multibase@0.6.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multihashes > multibase@0.7.0: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids > multihashes > multibase@1.0.1: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multiaddr@6.1.1: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multiaddr@7.5.0: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multiaddr > cids@0.8.3: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > multiaddr > multibase@0.7.0: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > multicodec@0.5.7: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > cids > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > cids > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw > multicodec@1.0.4: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > multicodec@0.5.7: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-info@0.15.1: No longer supported for js-libp2p0.28.0 or later
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-info > multiaddr@6.1.1: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > promisify-es6@1.0.3: Unmaintained
+warning @graphprotocol/graph-cli > request > har-validator@5.1.5: this library is no longer supported
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-cbor > multihashing-async@0.8.2: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-raw > multihashing-async@0.8.2: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > multihashing-async@0.7.0: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+warning @graphprotocol/graph-cli > ipfs-http-client > is-ipfs > mafmt > multiaddr@7.5.0: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-info > mafmt > multiaddr@6.1.1: This module is deprecated, please upgrade to @multiformats/multiaddr
+warning @graphprotocol/graph-cli > ipfs-http-client > ipld-dag-pb > protons@1.2.1: This module is no longer maintained
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > multihashing-async@0.5.2: This module has been superseded by the multiformats module
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > protons@1.2.1: This module is no longer maintained
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > libp2p-crypto-secp256k1@0.3.1: Included in libp2p-crypto, use it instead. https://github.com/libp2p/js-libp2p-crypto
+warning @graphprotocol/graph-cli > ipfs-http-client > peer-id > libp2p-crypto > libp2p-crypto-secp256k1 > multihashing-async@0.6.0: This module has been superseded by the multiformats module
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Installed "@graphprotocol/graph-cli@0.44.0" with binaries:
+      - graph
+Done in 24.46s.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service GITHUB_USERNAME/Learnweb3  --from-contract YOUR_RANDOM_WINNER_GAME_CONTRACT_ADDRESS  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · GITHUB_USERNAME/Learnweb3
+✖ Directory to create the subgraph in · graph
+ ›
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/lw3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 33879409
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/lw3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth
+Which product to initialize?: hosted-service
+What is the deploy key?: ****************************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/lw3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 33878825
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/lw3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ yarn --version
+1.22.19
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth
+Which product to initialize?: hosted-service
+What is the deploy key?: ****************************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ cd graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (master) $ graph auth
+Which product to initialize?: hosted-service
+What is the deploy key?: ****************************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (master) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (master) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/lw3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0xa29ab65ab5705287d4ba1569f00278687b5de7c9ed0bf5812fb42b1ea03495c8
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/lw3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (master) $ graph auth
+
+Which product to initialize?: Which product to initialize?: hosted-service
+What is the deploy key?: ****************************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (master) $ cd ..
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm- rf graph/
+bash: rm-: command not found
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ ls
+abi.json  graph  hardhat-tutorial
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/lw3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0xa29ab65ab5705287d4ba1569f00278687b5de7c9ed0bf5812fb42b1ea03495c8
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/lw3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth
+Which product to initialize?: hosted-service
+What is the deploy key?: ********************************
+    Error: Error storing deploy key: Invalid URL
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ cd hardhat-tutorial/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial (trunk) $ npx hardhat compile
+Nothing to compile
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial (trunk) $ npx hardhat run scripts/deploy.js --network mumbai
+Error: insufficient funds for intrinsic transaction cost [ See: https://links.ethers.org/v5-errors-INSUFFICIENT_FUNDS ] (error={"name":"ProviderError","_stack":"ProviderError: insufficient funds for gas * price + value\n    at HttpProvider.request (/workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/node_modules/hardhat/src/internal/core/providers/http.ts:88:21)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at EthersProviderWrapper.send (/workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/node_modules/@nomiclabs/hardhat-ethers/src/internal/ethers-provider-wrapper.ts:13:20)","code":-32000,"_isProviderError":true}, method="sendTransaction", transaction=undefined, code=INSUFFICIENT_FUNDS, version=providers/5.7.2)
+    at Logger.makeError (/workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/node_modules/@ethersproject/logger/src.ts/index.ts:269:28)
+    at Logger.throwError (/workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/node_modules/@ethersproject/logger/src.ts/index.ts:281:20)
+    at checkError (/workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/node_modules/@ethersproject/providers/src.ts/json-rpc-provider.ts:98:16)
+    at /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/node_modules/@ethersproject/providers/src.ts/json-rpc-provider.ts:265:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'insufficient funds for intrinsic transaction cost',
+  code: 'INSUFFICIENT_FUNDS',
+  error: ProviderError: insufficient funds for gas * price + value
+      at HttpProvider.request (/workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/node_modules/hardhat/src/internal/core/providers/http.ts:88:21)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      at EthersProviderWrapper.send (/workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial/node_modules/@nomiclabs/hardhat-ethers/src/internal/ethers-provider-wrapper.ts:13:20),
+  method: 'sendTransaction',
+  transaction: undefined
+}
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial (trunk) $ npx hardhat compile
+Nothing to compile
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial (trunk) $ npx hardhat run scripts/deploy.js --network mumbai
+Verify Contract Address: 0x7f5Bc8BCCCb3d2886585BcE594317988e41a9Cc2
+Sleeping.....
+The contract 0x7f5Bc8BCCCb3d2886585BcE594317988e41a9Cc2 has already been verified
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/hardhat-tutorial (trunk) $ cd ..
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x7f5Bc8BCCCb3d2886585BcE594317988e41a9Cc2  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/lw3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x7f5Bc8BCCCb3d2886585BcE594317988e41a9Cc2
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 33878825 
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/lw3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth
+Which product to initialize?: ^C
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth --product hosted-service 281c4296fec555813305481f21fa662d
+Deploy key set for https://api.thegraph.com/deploy/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/lw3
+✖ Directory to create the subgraph in · graph
+ ›
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ rm -rf graph/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph init --contract-name RandomWinnerGame --product hosted-service suvrajeet01/lw3  --from-contract 0x797548c3679d797275c4DEC5a28A52841DDD5782  --abi ./abi.json --network mumbai graph
+✔ Protocol · ethereum
+✔ Subgraph name · suvrajeet01/lw3
+✔ Directory to create the subgraph in · graph
+✔ Ethereum network · mumbai
+✔ Contract address · 0x797548c3679d797275c4DEC5a28A52841DDD5782
+✔ Fetching ABI from Etherscan
+✖ Failed to fetch Start Block: Failed to fetch contract creation transaction hash
+  
+✔ Start Block · 0
+✔ Contract Name · RandomWinnerGame
+✔ Index contract events as entities (Y/n) · true
+  Generate subgraph
+  Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n): 
+Subgraph suvrajeet01/lw3 created in graph
+
+Next steps:
+
+  1. Run `graph auth` to authenticate with your deploy key.
+
+  2. Type `cd graph` to enter the subgraph.
+
+  3. Run `yarn deploy` to deploy the subgraph.
+
+Make sure to visit the documentation on https://thegraph.com/docs/ for further information.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ graph auth --product hosted-service 281c4296fec555813305481f21fa662d
+Deploy key set for https://api.thegraph.com/deploy/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ cd graph/
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (master) $ 
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (master) $ ll
+total 212
+drwxr-xr-x   8 gitpod gitpod   4096 Apr  3 15:45 ./
+drwxr-xr-x   4 gitpod gitpod     59 Apr  3 15:44 ../
+drwxr-xr-x   2 gitpod gitpod     35 Apr  3 15:44 abis/
+drwxr-xr-x   3 gitpod gitpod     47 Apr  3 15:45 generated/
+drwxr-xr-x   8 gitpod gitpod    166 Apr  3 15:44 .git/
+-rw-r--r--   1 gitpod gitpod    138 Apr  3 15:44 networks.json
+drwxr-xr-x 421 gitpod gitpod  12288 Apr  3 15:45 node_modules/
+-rw-r--r--   1 gitpod gitpod    671 Apr  3 15:44 package.json
+-rw-r--r--   1 gitpod gitpod    835 Apr  3 15:44 schema.graphql
+drwxr-xr-x   2 gitpod gitpod     35 Apr  3 15:44 src/
+-rw-r--r--   1 gitpod gitpod    993 Apr  3 15:44 subgraph.yaml
+drwxr-xr-x   2 gitpod gitpod     75 Apr  3 15:44 tests/
+-rw-r--r--   1 gitpod gitpod     90 Apr  3 15:44 tsconfig.json
+-rw-r--r--   1 gitpod gitpod 174420 Apr  3 15:45 yarn.lock
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (master) $ rm -rf .git/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (trunk) $ yarn deploy
+yarn run v1.22.19
+$ graph deploy --node https://api.thegraph.com/deploy/ suvrajeet01/lw3
+  Skip migration: Bump mapping apiVersion from 0.0.1 to 0.0.2
+  Skip migration: Bump mapping apiVersion from 0.0.2 to 0.0.3
+  Skip migration: Bump mapping apiVersion from 0.0.3 to 0.0.4
+  Skip migration: Bump mapping apiVersion from 0.0.4 to 0.0.5
+  Skip migration: Bump mapping apiVersion from 0.0.5 to 0.0.6
+  Skip migration: Bump manifest specVersion from 0.0.1 to 0.0.2
+  Skip migration: Bump manifest specVersion from 0.0.2 to 0.0.4
+✔ Apply migrations
+✔ Load subgraph from subgraph.yaml
+  Compile data source: RandomWinnerGame => build/RandomWinnerGame/RandomWinnerGame.wasm
+✔ Compile subgraph
+  Copy schema file build/schema.graphql
+  Write subgraph file build/RandomWinnerGame/abis/RandomWinnerGame.json
+  Write subgraph manifest build/subgraph.yaml
+✔ Write compiled subgraph to build/
+  Add file to IPFS build/schema.graphql
+                .. QmTCF9Lc7J1Jr1WJJFmcxQK9UfmPNqZoUHjrV2uA98uNvo
+  Add file to IPFS build/RandomWinnerGame/abis/RandomWinnerGame.json
+                .. QmNnbyQ6GsJsm3AiDoyNn5ZAJ8RjABfmf7848n1xPuE2nG
+  Add file to IPFS build/RandomWinnerGame/RandomWinnerGame.wasm
+                .. QmXiKcE5TKPLsR2vkm7EHoJJawVX9ZyNEg2tHVSHeFPCMD
+✔ Upload subgraph to IPFS
+
+Build completed: QmWv969bu7RP2RY6RR95WWMKVEfbLHNtfDCBWsK8GFkFrP
+
+Deployed to https://thegraph.com/explorer/subgraph/suvrajeet01/lw3
+
+Subgraph endpoints:
+Queries (HTTP):     https://api.thegraph.com/subgraphs/name/suvrajeet01/lw3
+
+Done in 11.34s.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (trunk) $ clear
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (trunk) $ yarn codegen
+yarn run v1.22.19
+$ graph codegen
+  Skip migration: Bump mapping apiVersion from 0.0.1 to 0.0.2
+  Skip migration: Bump mapping apiVersion from 0.0.2 to 0.0.3
+  Skip migration: Bump mapping apiVersion from 0.0.3 to 0.0.4
+  Skip migration: Bump mapping apiVersion from 0.0.4 to 0.0.5
+  Skip migration: Bump mapping apiVersion from 0.0.5 to 0.0.6
+  Skip migration: Bump manifest specVersion from 0.0.1 to 0.0.2
+  Skip migration: Bump manifest specVersion from 0.0.2 to 0.0.4
+✔ Apply migrations
+✔ Load subgraph from subgraph.yaml
+  Load contract ABI from abis/RandomWinnerGame.json
+✔ Load contract ABIs
+  Generate types for contract ABI: RandomWinnerGame (abis/RandomWinnerGame.json)
+  Write types to generated/RandomWinnerGame/RandomWinnerGame.ts
+✔ Generate types for contract ABIs
+✔ Generate types for data source templates
+✔ Load data source template ABIs
+✔ Generate types for data source template ABIs
+✔ Load GraphQL schema from schema.graphql
+  Write types to generated/schema.ts
+✔ Generate types for GraphQL schema
+
+Types generated successfully
+
+Done in 1.68s.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (trunk) $ yarn deploy
+yarn run v1.22.19
+$ graph deploy --node https://api.thegraph.com/deploy/ suvrajeet01/lw3
+  Skip migration: Bump mapping apiVersion from 0.0.1 to 0.0.2
+  Skip migration: Bump mapping apiVersion from 0.0.2 to 0.0.3
+  Skip migration: Bump mapping apiVersion from 0.0.3 to 0.0.4
+  Skip migration: Bump mapping apiVersion from 0.0.4 to 0.0.5
+  Skip migration: Bump mapping apiVersion from 0.0.5 to 0.0.6
+  Skip migration: Bump manifest specVersion from 0.0.1 to 0.0.2
+  Skip migration: Bump manifest specVersion from 0.0.2 to 0.0.4
+✔ Apply migrations
+✔ Load subgraph from subgraph.yaml
+  Compile data source: RandomWinnerGame => build/RandomWinnerGame/RandomWinnerGame.wasm
+✔ Compile subgraph
+  Copy schema file build/schema.graphql
+  Write subgraph file build/RandomWinnerGame/abis/RandomWinnerGame.json
+  Write subgraph manifest build/subgraph.yaml
+✔ Write compiled subgraph to build/
+  Add file to IPFS build/schema.graphql
+                .. QmXxhUZEaZnuxztBG8STnFj5LYXaZ1j6KWrTcZJaTEFweD
+  Add file to IPFS build/RandomWinnerGame/abis/RandomWinnerGame.json
+                .. QmNnbyQ6GsJsm3AiDoyNn5ZAJ8RjABfmf7848n1xPuE2nG
+  Add file to IPFS build/RandomWinnerGame/RandomWinnerGame.wasm
+                .. QmWqQRGyRS19z3TGuLd2Uc11rWSQFxJpjGVrCrAuPkBxpz
+✔ Upload subgraph to IPFS
+
+Build completed: QmbHRaCXLNcdHqM8iXaRvXx6F4dS1keAsvBwVqh4rDiCJP
+
+Deployed to https://thegraph.com/explorer/subgraph/suvrajeet01/lw3
+
+Subgraph endpoints:
+Queries (HTTP):     https://api.thegraph.com/subgraphs/name/suvrajeet01/lw3
+
+Done in 9.97s.
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/graph (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr (trunk) $ cd 6.lottery-game_.chainlink/RandomWinnerGame/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ npx create-next-app@latest
+✔ What is your project named? … my-app
+✔ Would you like to use TypeScript with this project? … No / Yes
+✔ Would you like to use ESLint with this project? … No / Yes
+✔ Would you like to use `src/` directory with this project? … No / Yes
+✔ Would you like to use experimental `app/` directory with this project? … No / Yes
+✔ What import alias would you like configured? … @/*
+Creating a new Next.js app in /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app.
+
+Using npm.
+
+Initializing project with template: default 
+
+
+Installing dependencies:
+- react
+- react-dom
+- next
+- typescript
+- @types/react
+- @types/node
+- @types/react-dom
+
+
+added 25 packages, and audited 26 packages in 6s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+Success! Created my-app at /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame (trunk) $ cd my-app/
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app (trunk) $ npm install web3modal
+
+added 58 packages, and audited 84 packages in 3s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app (trunk) $ npm i ethers@5
+
+added 45 packages, and audited 129 packages in 3s
+
+37 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app (trunk) $ npm i axios
+
+added 9 packages, and audited 138 packages in 1s
+
+38 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app (trunk) $ clear
+
+
+
+
+
+
+
+
+
+
+
