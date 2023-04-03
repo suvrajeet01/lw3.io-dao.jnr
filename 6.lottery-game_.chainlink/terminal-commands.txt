@@ -1797,3 +1797,193 @@ gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-a
 
 
 
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app (trunk) $ npm run dev
+
+> my-app@0.1.0 dev
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+event - compiled client and server successfully in 2.6s (170 modules)
+wait  - compiling / (client and server)...
+event - compiled client and server successfully in 1367 ms (377 modules)
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 129 ms (378 modules)
+^C
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app (trunk) $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../abi.json
+        modified:   ../../contract-address
+        modified:   ../../terminal-commands.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../graph/
+        ./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink/RandomWinnerGame/my-app (trunk) $ cd ../..
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   RandomWinnerGame/abi.json
+        modified:   contract-address
+        modified:   terminal-commands.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        RandomWinnerGame/graph/
+        RandomWinnerGame/my-app/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git add .
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   RandomWinnerGame/abi.json
+        new file:   RandomWinnerGame/graph/abis/RandomWinnerGame.json
+        new file:   RandomWinnerGame/graph/build/RandomWinnerGame/RandomWinnerGame.wasm
+        new file:   RandomWinnerGame/graph/build/RandomWinnerGame/abis/RandomWinnerGame.json
+        new file:   RandomWinnerGame/graph/build/schema.graphql
+        new file:   RandomWinnerGame/graph/build/subgraph.yaml
+        new file:   RandomWinnerGame/graph/generated/RandomWinnerGame/RandomWinnerGame.ts
+        new file:   RandomWinnerGame/graph/generated/schema.ts
+        new file:   RandomWinnerGame/graph/networks.json
+        new file:   RandomWinnerGame/graph/package.json
+        new file:   RandomWinnerGame/graph/schema.graphql
+        new file:   RandomWinnerGame/graph/src/random-winner-game.ts
+        new file:   RandomWinnerGame/graph/subgraph.yaml
+        new file:   RandomWinnerGame/graph/tests/random-winner-game-utils.ts
+        new file:   RandomWinnerGame/graph/tests/random-winner-game.test.ts
+        new file:   RandomWinnerGame/graph/tsconfig.json
+        new file:   RandomWinnerGame/graph/yarn.lock
+        new file:   RandomWinnerGame/my-app/.gitignore
+        new file:   RandomWinnerGame/my-app/README.md
+        new file:   RandomWinnerGame/my-app/constants/index.js
+        new file:   RandomWinnerGame/my-app/next.config.js
+        new file:   RandomWinnerGame/my-app/package-lock.json
+        new file:   RandomWinnerGame/my-app/package.json
+        new file:   RandomWinnerGame/my-app/pages/_app.tsx
+        new file:   RandomWinnerGame/my-app/pages/_document.tsx
+        new file:   RandomWinnerGame/my-app/pages/api/hello.ts
+        new file:   RandomWinnerGame/my-app/pages/index.tsx
+        new file:   RandomWinnerGame/my-app/public/favicon.ico
+        new file:   RandomWinnerGame/my-app/public/next.svg
+        new file:   RandomWinnerGame/my-app/public/randomWinner.png
+        new file:   RandomWinnerGame/my-app/public/thirteen.svg
+        new file:   RandomWinnerGame/my-app/public/vercel.svg
+        new file:   RandomWinnerGame/my-app/queries/index.js
+        new file:   RandomWinnerGame/my-app/styles/Home.module.css
+        new file:   RandomWinnerGame/my-app/styles/globals.css
+        new file:   RandomWinnerGame/my-app/tsconfig.json
+        new file:   RandomWinnerGame/my-app/utils/index.js
+        modified:   contract-address
+        modified:   terminal-commands.txt
+
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git commit -m "chainlink.lottery-game.the-graph"
+[trunk b86a248] chainlink.lottery-game.the-graph
+ 39 files changed, 12112 insertions(+), 273 deletions(-)
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/abis/RandomWinnerGame.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/build/RandomWinnerGame/RandomWinnerGame.wasm
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/build/RandomWinnerGame/abis/RandomWinnerGame.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/build/schema.graphql
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/build/subgraph.yaml
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/generated/RandomWinnerGame/RandomWinnerGame.ts
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/generated/schema.ts
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/networks.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/package.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/schema.graphql
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/src/random-winner-game.ts
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/subgraph.yaml
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/tests/random-winner-game-utils.ts
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/tests/random-winner-game.test.ts
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/tsconfig.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/graph/yarn.lock
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/.gitignore
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/README.md
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/constants/index.js
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/next.config.js
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/package-lock.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/package.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/pages/_app.tsx
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/pages/_document.tsx
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/pages/api/hello.ts
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/pages/index.tsx
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/public/favicon.ico
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/public/next.svg
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/public/randomWinner.png
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/public/thirteen.svg
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/public/vercel.svg
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/queries/index.js
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/styles/Home.module.css
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/styles/globals.css
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/tsconfig.json
+ create mode 100644 6.lottery-game_.chainlink/RandomWinnerGame/my-app/utils/index.js
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ git push
+Enumerating objects: 64, done.
+Counting objects: 100% (64/64), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (50/50), done.
+Writing objects: 100% (58/58), 215.55 KiB | 7.18 MiB/s, done.
+Total 58 (delta 5), reused 7 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+To https://github.com/suvrajeet01/lw3.io-dao.jnr.git
+   f286934..b86a248  trunk -> trunk
+gitpod /workspace/lw3.io-dao.jnr/6.lottery-game_.chainlink (trunk) $ 
+
+
